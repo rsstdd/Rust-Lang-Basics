@@ -2,7 +2,7 @@
 use std::mem;
 
 fn main() {
-    // "let" creates a binding - binds the variable a (a memory location) to 123
+    // "let" creates a binding - binds the variable 'a' (a memory location) to 123
     // 8 bits in 1 byte - unsigned 8 bits
     // 8 bits with the value 123
     // Unsigned - whole numbers represented by signed and unsigned
