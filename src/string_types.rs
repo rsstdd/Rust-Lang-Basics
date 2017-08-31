@@ -4,6 +4,12 @@
 // - Can be created during runtime
 // - Actually constains data
 
+// Takaways
+// - When passing to fns -> favor &str type
+// - When returning strings from fns -> favor the String type
+// - Raw byte strings are arrays or vectors of 8-bit unsigned integers (u8)
+// - Strings are Heap Allocated and Dynamically Grown
+
 // Has to be allocated in the Heap
 // - possibly reallocated on growth
 
@@ -27,6 +33,14 @@
 fn main() {
 
     let mut empty_string = String::new();
+    let mut my_string_String = String::new();
+    let mut my_string_str: &str = "This is my static, fixed length string."
+
+    println!("1) empty_string {:?}", empty_string);
+    println!("2) my_empty_string {:?}", my_empty_string);
+    println!("3) my_string_str {:?}", my_string_str);
+    println!("{:?}", "");
+
     let empty_string_with_capacity = String::with_capacity(50);
     let string_from_bytestring: String = String::from_utf8(vec![82, 85, 83,
     84]).expect("Creating String from bytestring failed");
