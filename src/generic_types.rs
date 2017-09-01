@@ -13,11 +13,13 @@
 //   * is_none works the same as is_some but not vice versa
 //   * expect extracts the value from inside the Option type or panics if it was none
 
+#[allow(dead_code)]
 enum Option<T> {
     Some(T),
     None
 }
 
+#[allow(dead_code)]
 enum Result<T, E> {
   Ok(T),
   Err(E)
