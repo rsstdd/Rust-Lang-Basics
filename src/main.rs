@@ -1,3 +1,3 @@
 fn main() {
-    sh::stack_and_heap();
+    // sh::stack_and_heap();
 }
